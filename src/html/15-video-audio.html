@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video 및 iframe 요소 | Techit</title>
+  </head>
+  <body>
+    <figure>
+      <!-- autoplay 속성은 muted 속성을 함께 제공할 경우에만 동작 -->
+      <video class="fullsize" poster="./../assets/video/poster.jpg" controls>
+        <source src="../assets/video/google-developer-stories.mp4" type="video/mp4" />
+        <source src="../assets/video/google-developer-stories.mov" type="video/mov" />
+        <source src="../assets/video/google-developer-stories.ogg" type="video/ogg" />
+        <source src="../assets/video/google-developer-stories.webm" type="video/webm" />
+        <track
+          src="../assets/video/google-developer-stories-subtitles-en.vtt"
+          kind="captions"
+          srclang="en"
+          label="English Caption"
+        />
+      </video>
+    </figure>
+    <hr />
+    <video class="fullsize" poster="./../assets/video/poster.jpg" controls autoplay muted>
+      <track
+        src="../assets/video/google-developer-stories-subtitles-en.vtt"
+        kind="captions"
+        srclang="en"
+        label="English Caption"
+      />
+    </video>
+  </body>
+</html>
