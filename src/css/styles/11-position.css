@@ -1,0 +1,41 @@
+@import "./../../common/modern-reset.css";
+
+div:not(#awebChromeHelper) {
+  font-size: 3rem;
+  border: 1px solid currentColor; /* 글자 색깔과 동일하게 */
+  padding: 10px;
+}
+
+.static {
+  background: yellow;
+}
+
+.fixed {
+  background: hsla(250 50% 50% / 1);
+  position: fixed;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+}
+
+.relative-wrapper {
+  position: relative;
+}
+
+.absolute-wrapper {
+  position: absolute;
+}
+
+.absolute {
+  background: sandybrown;
+  position: absolute;
+  inset-inline-start: 100px;
+  inset-block-start: 150px;
+}
+
+.sticky {
+  background: aquamarine;
+  padding: 20px;
+  margin-block: 100px;
+  position: sticky;
+  inset-block-start: 0;
+}
