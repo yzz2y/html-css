@@ -42,9 +42,16 @@ body {
   }
 
   thead,
+  tbody,
+  tr,
   th,
   td {
-    border: 1px solid currentColor;
+    border: inherit;
+  }
+
+  thead,
+  th,
+  td {
     padding: 1em;
   }
 
