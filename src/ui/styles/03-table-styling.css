@@ -1,0 +1,30 @@
+@import "./../../common/modern-reset.css";
+
+.ediya-news {
+  table-layout: fixed;
+  border-top: 2px solid #24388d;
+  border-bottom: 2px solid #24388d;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 710px;
+  height: 486px;
+
+  td {
+    border-top: 1px solid #24388d;
+    border-bottom: 1px solid #24388d;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+}
+
+.article-title {
+  font-size: 13px;
+}
+
+.article-content {
+  font-size: 12px;
+}
