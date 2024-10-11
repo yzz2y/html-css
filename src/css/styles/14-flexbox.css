@@ -31,9 +31,9 @@ h2 {
 
 .flex-item {
   background-color: pink;
-  inline-size: 500px;
+  /* inline-size: 500px; */
   block-size: 200px;
-  flex-basis: auto;
+  flex-basis: 0;
 }
 
 .flex-item:nth-child(odd) {
