@@ -158,3 +158,12 @@ body {
     color: var(--green);
   }
 }
+
+/* 버튼 컴포넌트 */
+.button--primary {
+  background-color: var(--green);
+  color: var(--white);
+  block-size: 3.5rem;
+  padding: 1rem;
+  border: 0;
+}
