@@ -10,3 +10,17 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+/* 포커스 스타일링 */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  box-shadow: 0 0 2px 2px #03cc5c;
+  border-radius: 4px;
+}
+
+input:focus-visible {
+  box-shadow: none;
+}
