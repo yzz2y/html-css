@@ -1,0 +1,61 @@
+@import "./../../common/base.css";
+
+html,
+body {
+  block-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* 그리드 컨테이너 */
+.container {
+  background-color: yellow;
+  min-inline-size: 1000px;
+  display: grid;
+  grid-template-columns: [container-start] 50px [content-start] repeat(12, 1fr) [content-end] 50px [container-end];
+  grid-template-rows: 10% 10% 60% 10% 10%;
+  column-gap: 24px;
+  block-size: 100%;
+
+  .header {
+    background-color: gold;
+    /* 라인 이름 기반으로 콘텐츠 영역에 헤더를 배치 */
+    grid-column: content;
+  }
+
+  .navigation {
+    background-color: lightgreen;
+    /* 사이드 바의 행 시작 번호를 명시적으로 할당했기 때문에 겹치는 영역인 내비게이션의 위치도 명시적으로 지정해야 함. */
+    /* 암묵적으로 배치 시킬 경우 아이템을 겹치지 않고 서로 다른 셀에 배치되기 때문에 */
+    grid-row: 2 / 3;
+    /* 라인 이름 기반으로 컨테이너 영역에 내비게이션을 배치 */
+    grid-column: container;
+  }
+
+  .main {
+    background-color: lightskyblue;
+    /* 내비게이션과 사이드 바의 영역 설정 으로 인해 시작하는 행 번호를 명시해야 함. */
+    grid-row: 3/ 4;
+    grid-column: 2 / span 10;
+  }
+
+  .sidebar {
+    background-color: lightsalmon;
+    /* 사이드바가 내비게이션 영역에 겹쳐서 배치 되도록 시작 번호를 명시 */
+    grid-column: 11 / span 2;
+    grid-row: 2 / span 2;
+  }
+
+  .slogan {
+    background-color: lightslategray;
+    grid-column: content;
+  }
+
+  .footer {
+    background-color: lightpink;
+    /* 라인 번호 기반으로 푸터를 전체 행에 배치 */
+    grid-column: 1 / -1;
+  }
+}
