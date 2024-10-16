@@ -1,26 +1,35 @@
-/* 포커스 스타일링 */
-:focus {
-  outline: none;
+/* 색상 */
+:root {
+  --white: #fff;
+  --black: #121212;
+  --gray: #778899;
+  --silver: #d3d3d3;
+  --red: #ef5959;
+  --orange: #ffb37b;
+  --yellow: #feff94;
+  --green: #98fb98;
+  --blue: #83d9ef;
+  --violet: #ad64c5;
+  --pink: #facbf8;
 }
 
-:focus-visible {
-  box-shadow: 0 0 2px 2px rgb(224, 86, 86, 0.85);
-  border-radius: 4px;
+/* 폼 요소 초기화 - 상속 */
+input,
+button,
+select,
+textarea {
+  font: inherit;
 }
 
-input:is([type="email"], [type="password"], [type="text"], [type="search"]):focus-visible {
-  box-shadow: none;
+/* 기본 박스 사이징 설정 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* 숨김 콘텐츠 */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+/* 본문 기본 글꼴 지정 */
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  margin: 50px;
 }
